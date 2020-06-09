@@ -1,8 +1,10 @@
+import os
+fille = open("collatz.txt", "a")
 def secuencia(n):
     numeros=[n]
     for i in range(1,n):
         a=n
-        while(n>1):
+        while(n>2):
             if(a%2==0):
                 a//=2
                 numeros.append(a)
